@@ -1,0 +1,113 @@
+<html>
+<head>
+   <title> Validation Form </title>
+<style>
+body{
+font-family: Arial;
+font-size: 20px;
+background-image: url("https://www.bypeople.com/wp-content/uploads/2014/05/light-live-background-css.jpg");
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+div{
+border:5px solid;
+border-color:black;
+margin:5px;
+padding: 10px;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script type="text/javascript">
+   function validationform() 
+   {
+      
+      var firstName=document.vform.fn.value;
+      var lastName=document.vform.ln.value;
+      var nameRegex = /^[a-zA-Z]+$/;
+      var email = document.vform.email.value;
+      
+      
+      var emailRegex = /^[\d]{2}[A-Za-z]{3}[\d]{3}@nirmauni\.ac\.in$/
+      
+      var password = document.vform.ps.value;
+      var confirmPassword = document.vform.Cps.value;
+      if (firstName == "") {
+         alert("First name must be filled out");
+         return false;
+      }
+
+      if (lastName == "") {
+         alert("Last name must be filled out");
+         return false;
+      }
+
+      if (!nameRegex.test(firstName) || !nameRegex.test(lastName)) {
+         alert("Name fields should accept letters only");
+         return false;
+      }
+
+      if (!emailRegex.test(email)) {
+         alert("Email should be in the form of DDCCCDDD@nirmauni.ac.in");
+         return false;
+      }
+
+      if (password.length < 8) {
+         alert("Password must be a minimum of eight characters long");
+         return false;
+      }
+
+      if (!/[A-Z]/.test(password) || !/[a-z]/.test(password) || !/\d/.test(password)) {
+         alert("Password must contain at least one uppercase letter, one lowercase letter, and one digit");
+         return false;
+      }
+
+      if (password != confirmPassword) {
+         alert("Password and re-type password must be the same");
+         return false;
+      }
+
+      return true;
+   }
+</script>
+
+</head>
+<body bgcolor="#c4c4c4" text="red" onsubmit="validationform()" ng-app="">
+<h1><marquee behavior="alternate" bgcolor="yellow"> Registation Form</marquee></h1>
+<div align="center">
+<form name="vform" method="post" >
+firstname :<input type="text" ng-model="fname"name="fn" value="" size="25" maxlenth="15"/>  {{fname | uppercase}}<br><br>
+lastname :<input type="text" ng-model="lname" name="ln" value="" size="25" maxlenth="15"/>  {{lname | uppercase}}<br/></br>
+e-mail :<input type="text" ng-model="emai" name="email" value="" size="35" maxlenth="25"/>  {{emai | lowercase}}<br/></br>
+password :<input type="password" name="ps" /><br/></br>
+C-password :<input type="password" name="Cps" /><br/></br>
+MobileNo:<input type="text" ng-model="mob" name="Mno" /> {{mob |  limitTo:10}}<br/></br>
+
+Gender :<input type="Radio" name="Gen" value="male" >male</input>
+<input type="Radio" name="Gen" value="female" >female</input><br/></br>
+
+
+hobby :<input type="checkbox" name="hobby" value="singing" >Reading</input>
+<input type="checkbox" name="hobby" value="dancing" >writing</input>
+<input type="checkbox" name="hobby" value="swimming" >singing</input><br/></br>
+
+photo :<input type="file" name="photo"/><br/></br>
+
+City :<select name="city">
+           <option value="select city">select city</option>
+           <option value="Jamnagar">Junagadh</option>
+           <option value="Rajkot">Porbandar</option>
+           <option value="Morbi">Bhachau</option>
+
+
+</select><br/></br>
+Address :<Textarea name="Add" Rows="4" cols="25" placeholder="Enter address Here..."/>
+</textarea><br/></br>
+<input type="submit" name="submit" value="submit" />
+<input type="Reset" name="Reset" value="Reset" />
+
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="login1.css" />
+    <title>Apana BaZZar</title>
+    <script>
+      function check() {
+        var storedName = localStorage.getItem("name");
+        var storedPw = localStorage.getItem("pw");
+
+        var userName = document.getElementById("userName");
+        localStorage.setItem('username',userName.value);
+
+        var userPw = document.getElementById("userPw");
+        localStorage.setItem('userPw',userPw.value);
+
+
+        if (userName.value == storedName && userPw.value == storedPw) {
+          alert("You are logged in.");
+        } else {
+          alert("Error on login");
+        }
+
+      }
+    </script>
+  </head>
+  <body>
+    <center>
+      <div>
+        <form action="index.html">
+          <div class="card">
+            <a class="singup">Sign In</a>
+
+            <div class="inputBox">
+              <input type="text" name="fn" required="required" id="userName" />
+              <span>Username</span>
+            </div>
+
+            <div class="inputBox">
+              <input
+                type="password"
+                name="ps"
+                required="required"
+                id="userPw"
+              />
+              <span>Password</span>
+            </div>
+
+            <input type="submit" class="enter" onclick="check()" />
+          </div>
+        </form>
+        <a href="signup.html">Regitser</a>
+      </div>
+    </center>
+  </body>
+</html>

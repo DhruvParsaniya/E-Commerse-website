@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="login1.css">
+    <title>MyMarket</title>
+    <script>//checking
+        function check(){
+            var storedName = localStorage.getItem('name');
+            var storedPw = localStorage.getItem('pw');
+        
+            var userName = document.getElementById('userName');
+            var userPw = document.getElementById('userPw');
+          
+        
+            if(userName.value == storedName && userPw.value == storedPw){
+                alert('order success.');
+            }else{
+                alert('Error on order');
+                
+            }
+        }</script>
+        <style>
+            button{
+                height:50px;
+            }
+        </style>
+</head>
+<body >
+    <center>
+        <div >
+            <form action="index.html">
+            <div class="card" >
+                <a class="singup">Placeorder</a>
+                <div class="inputBox">
+                    <input type="text" required="required" id="userName">
+                    <span class="user">username</span>
+                </div>
+                <div class="inputBox">
+                    <input type="text" required="required">
+                    <span>name</span>
+                </div>
+                <div class="inputBox1">
+                    <input type="email" required="required">
+                    <span class="user">Email</span>
+                </div>
+
+
+                <div class="inputBox">
+                    <input type="number" required="required">
+                    <span>Mobile no.</span>
+                </div>
+   
+                <div class="inputBox">
+                    <input type="text" required="required" >
+                    <span>Address</span>
+                </div>
+                <div class="inputBox">
+                    Payment method:<select name="city">
+                        <option value="select city">select method</option>
+                        <option value="Jamnagar">COD</option>
+                        <option value="Rajkot">Net banking</option>
+             
+             
+             </select><br/></br></div>
+                <button class="enter" onclick="check()">Buy it!</button>
+            </form>
+ </div>
+
+
+</center>
+</body>
+</html>
+

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Apna BaZZar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="hreo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        nav{
+            height: 70px;
+        }
+        .user_name{
+            color: aliceblue;
+        }
+        
+    </style>
+
+</head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js">
+  
+</script>
+<body ng-app="">
+
+    <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark col-xs-6 col-sm-6 col-md-3 col-lg-3 pb-4">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Apna BaZZar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="https://www.myntra.com/men-tshirts" target="_blank">MEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://www.myntra.com/women-winterwear">WOMEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="https://www.myntra.com/kids-wear">CHILDREN</a>
+                </li>
+
+                <li class="nav-item">
+                <a class="nav-link active" href="https://www.myntra.com/accessories" tabindex="-1" aria-disabled="true">ACCESORRIES</a>
+                </li>
+            </ul>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <i class="fa fa-user" style="color: aliceblue; font-size: 20px;"></i>
+            &nbsp;&nbsp;
+            <div class="user_name">
+                <script>
+                  if(localStorage.getItem('name')==localStorage.getItem('username') && localStorage.getItem('pw')==localStorage.getItem('userPw')){
+                      document.write(localStorage.getItem('name'));
+                      // document.getElementById("name").style.color = "red";
+                  }
+                 </script></div>
+          </div>
+         
+          <form class="d-flex">
+            <button id="login0"><a href="signin.html" target="_blank" >LOG IN</a></button>&nbsp;
+            <button id="login0"><a href="signup.html" target="_blank">SIGN UP</a></button>
+          </form>
+        </div>
+
+      </nav>
+    <div class="hero">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="clothes-hanger-rack-costume-outfit-closet-concept.jpg" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="top-view-accessoires-travel-with-man-clothing-concept-bow-ti.jpg" alt="Second slide">
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="7945.jpg" alt="Third slide">
+              </div>
+            
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <!-- <span class="sr-only">Previous</span> -->
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <!-- <span class="sr-only">Next</span> -->
+            </a>
+        </div>
+    </div>
+
+    <br>
+
+    <hr>
+    <h3 style="text-align: center;">CLOTHING</h3>
+    <hr>
+    <br>
+
+    <div class="cards row">
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/15.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Black  Jacket</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs.999</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4">
+            <img src="https://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Vertical/12.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Men Navy Blue Jacket</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 1099</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4" >
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQ6XP6UuVs0wdsETYGOL2g98uPf0cUYhqjmD21V9v5-k7o4ws_k4KG-gdD11vCCXjEo9EaPG_8-waUAKW2gIS_6__iYbNpB2TGROTJf5E8Vb9CV5mzenvllfE7Cs1tzuOrA5O11&usqp=CAc" class="card-img-top" width="">
+            <div class="card-body">
+                <h5 class="card-title">Gray Jacket with pockets</h5>
+                <p class="card-text"></p>
+            </div> 
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs.499</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQIOwpisXTvEDXVbDir4btZenqJHC6MyUqBuaIehYLdf4852kcNInWig4xzCwsv541xa1LKnokWXjtZRQpOyWYGmDvUK3SaOSeH4oZT8lDc" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">black Kargo shirt</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs.499</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4 ">
+            <img style=" padding-bottom:16px" src="data:image/jpeg;base64,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 p1tbaO1cYq3SMo12 UXJIA5k2AjT/AGswBaWGoCZdz/KbN+R8Iy/pKoa2q3B/i1qPGNtz5hRhqL247GOWV1lK64zeNjNpMoA5c5HiRX8jtceMWHAGopr36+PGInpPCGVMZLmhtYGqG6mjWNqjjUGCujSDQqVpyqPodNrR6LzHnm5UxOA0+sQ2Pwoym9aD7+vpEy5rS3oiAekq5THGukSPsm+12 AfKzDzOb84lWSIH2Pc5Ji8HB8xT8olp7v8ACRWnClfrHnyvL0Y9B583rXUFQQBfUnfhw8zAM9C3VyinJqff/MGMpFqAjn52EN+7OrW9evKCgkkkkEA0GndqL8PCH/c8j4f7glRzv3UhR74oOl9nXgfL0PKFGWCbnu4juhuVp5w62niPuIgHdHTQ2+tf0/WOB3zZqlgL0J32MGYrQd/6QNJ/M/eAlUaoBjsNYbs+UOiKOCF0hK6w5xiBAin9PYek96fEQw8QK/UMYt4is9Nfvv6R/wC0dPH+zHkn4q66Fq0FDS40r3QyzUWhNx9OdIImfvF7zDeO0fvEd64Kp0rrzJPr1zjYExOeWji2ZEYeIB9eEY/0nqO79Y1Xov8AcSP/AKpf/SOOfbtijPaqVmRHqSQctf4WuPrT/wAjET0cakmleI+Lv5jmOMTXTf7l+5P+yRX+jv3id7feO3j/AFcvJ+yxSTUfW/2gTGiw4CJEfp94An9hu4fYxmkd9lHo85eSHyqPziwFhcRW/Zj97M/l/wDaLFK7Let44Zdu+PRo29flCEAO+lN++oveOnsiGj2h4/aMtQouOI8DWGJuKANISND3GGpfaPefskWkf//Z" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Raymond Formal Blazer </h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 9998</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqk6MZS9YYXknVKIE7ZyS0YUddnwJw46e2ZQ&usqp=CAU" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Men Blue Blazer</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 9999</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRtweTb3qU58V4JPE1N0BaKf1iYL_xgFln7w&usqp=CAU" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Men Gray Blazer</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs.14999</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQmFg_3tVulz2nMpTQicppn8Qli8qZmrvCKQ&usqp=CAU" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Men light Green Blazer</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 2900</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+            </ul>
+        </div>
+        <br>
+
+
+        <!-- Accessories Section -->
+        <hr>
+        <h3 style="text-align: center;">Accessories</h3>
+        <hr>
+
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4">
+            <img src="https://rukminim1.flixcart.com/image/612/612/ky0g58w0/smartwatch/o/n/8/-original-imagac74kujhzzrc.jpeg?q=70" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">boAt Wave Neo with 1.69 inch , 2.5D Curved Display</h5>
+               
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 31999</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4">
+            <img src="https://img.freepik.com/free-photo/businessma12 checking-time_1357-97.jpg?size=626&ext=jpg&uid=R101398497&ga=GA1.2.2013295932.1676605328&semt=robertav1_2_sidr" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">GRANT SPOR Analog Watch - For Men FS5268I</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 1999</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4" >
+            <img src="https://img.freepik.com/free-photo/levitating-music-headphones-display_23-2149817606.jpg?size=626&ext=jpg&uid=R101398497&ga=GA1.2.2013295932.1676605328&semt=robertav1_2_sidr" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">SONY WH-CH520 with 50 Hrs Playtime, DSEE Upscale</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 11999</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4">
+            <img src="https://img.freepik.com/free-photo/eyeglasses-wear_1203-2604.jpg?size=626&ext=jpg&uid=R101398497&ga=GA1.1.2013295932.1676605328&semt=robertav1_2_sidr" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Polarized Round Sunglasses </h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price price" >Rs.799</li>
+                <li class="list-group-item" ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+            </ul>
+        </div>
+
+        <hr>
+        <h3 style="text-align: center;">Shoes</h3>
+        <hr>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4" >
+            <img style=" padding-bottom:16px; height: 15rem;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdo0NlWbahChb6_xsxPTzImlnoTnbJL7Hn1Q&usqp=CAU" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Synthetic Leather For Men</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs.1399</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4">
+            <img style="height: 15.3rem" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyvU2Xg7SbKpLGFG3KxrOX0nYsuwsrhCZhmg&usqp=CAU" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Casuals, Canvas, Partywear Sneakers For Men</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 1499</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+            </ul>
+        </div>
+        <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEIkLaVet_c9T4iPTOPEVbbMKvm5BvkwTPCg&usqp=CAU" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Casual Loafers For Men(Brown)</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 1799</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+            </ul>
+        </div> <div class="card col-xs-12 col-sm-12 col-md-4 col-lg-3 pb-4 ">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNy7fTlAsCwIN82C6hv2H7Gi_rHmShwebtTA&usqp=CAU" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Racard M Running Shoes For Men</h5>
+                <p class="card-text"></p>
+            </div>
+            <ul class="list-group list-group-flush priceCenter">
+                <li class="list-group-item price">Rs. 2900</li>
+                <li class="list-group-item " ><button class="btn newbtn">Add to cart</button></li>
+                <!-- <li class="list-group-item1 remove" ><button class="btn"> Remove</button></li> -->
+
+            </ul>
+        </div>
+    </div>
+
+    <br>
+
+
+
+    <!-- AddToCart Section -->
+
+    <h3 style="text-align: center; font-weight: 700;">Your Orders</h3>
+
+    <div class="addtocart">
+        
+    </div>
+    <br>
+    <div class="paymentBtn">
+        <h4 id="totalValue" >Total order value : 0</h4>
+        <button id="login0"><a href="place.html" target="_blank"  style="text-decoration: none;">Place Order</a></button>
+        
+    </div>
+ 
+
+
+
+
+
+    <!-- <br><br><br><br> -->
+    
+
+    <br>
+    <!-- footer section -->
+    
+    <!-- <div class="footer">
+        <div class="foot-left">
+            <div class="fl1">
+                <span><h4>Apna BaZZar</h4></span>
+            </div>
+            <div class="fl2">
+                <p>Bulding 101,
+                    <br>
+                    M.G.Road,
+                    <br>    
+                    Porbandar,
+                    Gujara
+                </p>
+            </div>
+        </div>
+        <div class="foot-right">
+            <div class="foot-cen">
+                <h5>Online store</h5>
+                <span><a href="#">Men Clothing</a></span>
+                <span><a href="#">Women Clothing</a></span>
+                <span><a href="#">Men Accessories</a></span>
+                <span><a href="#">woMen Accessories</a></span>
+            </div>
+            <div class="foot-cen">
+                <h5>Helpful Links</h5>
+                <span><a href="#">Home</a></span>
+                <span><a href="#">About</a></span>
+                <span><a href="contact.html">Contact</a></span>
+            </div>
+            <div class="foot-cen">
+                <h5>Partners</h5>
+                <span><a href="#">Zara</a></span>
+                <span><a href="#">Puma</a></span>
+                <span><a href="#">Nike</a></span>
+                <span><a href="#">H&M</a></span>
+                <span><a href="#">Pantaloons</a></span>
+                <span><a href="#">Levi's</a></span>
+
+            </div>
+        </div>
+    </div>
+   -->
+   <!-- Footer -->
+<footer class="text-center text-lg-start bg-dark text-light">
+  
+      <!-- Right -->
+      <div>
+        <a href="" class="me-4 text-reset">
+          
+          
+        </a>
+        <a href="" class="me-4 text-reset">
+        </a>
+        <a href="" class="me-4 text-reset">
+        </a>
+        <a href="" class="me-4 text-reset">
+        </a>
+      </div>
+      <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+  
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-center text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <!-- Content -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              <i class="fas fa-gem me-3"></i>Apna BaZZar
+            </h6>
+            <p>
+              Here you can use rows and columns to organize your footer content. Lorem ipsum
+              dolor sit amet, consectetur adipisicing elit.
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Useful links
+            </h6>
+            <p>
+              <a href="contact.html" class="text-reset">Home</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Settings</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Orders</a>
+            </p>
+            <p>
+              <a href="#!" class="text-reset">Help</a>
+            </p>
+          </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+            <p><i class="fa fa-home" style="font-size:25px;color:whitesmo12 ">&nbsp;</i> New York, NY 10012, US</p>
+            <p>
+                <i class="fa fa-info-circle" style="font-size:25px;color: whitesmo12 ;">&nbsp;</i>
+              info@example.com
+            </p>
+            <p><i class="fa fa-phone" style="font-size:25px;color: whitesmo12 ;">&nbsp;</i> + 91 978 666 7878</p>
+            <p><i class="fa fa-phone" style="font-size:25px;color: whitesmo12 ;">&nbsp;</i> + 81 719 878 2566</p>
+          </div>
+          <!-- Grid column -->
+        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Copyright:
+      <a class="text-reset fw-bold" href="https://mdbootstrap.com/">ApnaBaZZar@.com</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <script src="addToCart.js"></script>
+    <script>
+        $('.carousel').carousel({
+            interval:2500
+        })
+    </script>
+
+  
+
+</body>
+
+
+</html>
